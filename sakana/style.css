@@ -389,3 +389,7 @@ html,body {
     text-decoration: none;
     position: absolute;
 }
+.nav-01 .txt-in {
+    top: 100px;
+    left: 30px;
+}
