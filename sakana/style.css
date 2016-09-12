@@ -390,7 +390,7 @@ html,body {
     text-decoration: none;
     position: absolute;
     top: 50px;
-    left: 0px;
+    left: 20px;
     bottom: 0px;
     right: 0;
     transform:rotateY(0deg);
