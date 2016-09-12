@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <script src="jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="textillate-master/jquery.textillate.js"></script>
+    <script type="text/javascript" src="textillate-master/assets/jquery.lettering.js"></script>
+    <link rel="stylesheet" type="text/css" href="textillate-master/assets/animate.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="jquery.ripples-master/jquery.ripples-min.js"></script>
+    <script src="jquery.ripples-master/jquery.ripples.js"></script>
+ 
+	<title>page</title>
+    
+    <style>
+
+    html,body {
+        width: 100%;
+        height: 100%;        
+    }
+    body {
+        font-family: 'Batang';
+        background-color: #2d2d2d; /* #eee; */
+        width: 100%;
+        height: 100%;
+/*        background-image: url();
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;*/
+    }
+    #text {
+        font-weight: 200;
+        color: #888;
+        font-size: 30px;
+        opacity: 0.8;
+        letter-spacing: 10px;
+    }
+    .name {
+        font-size: 30px;
+        font-weight: bold;
+        color: #FFF;
+    }
+    .top {
+        position: fixed;
+        top: -20px;
+        left: 850px;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 4.5;        
+    }
+    .main {
+        writing-mode: vertical-rl;　
+    }
+   .top {
+       height: 640px;
+   }
+    </style>
+
+</head>
+<body>
+
+    <div class="top">
+
+    <h1 class="name">sakanaction</h1>
+
+    <div class="main">
+    <span class="txt1" id="text">さよなら僕は一人</span><br>
+    <span class="txt2" id="text">君と話した言葉の意味</span><br>
+    <span class="txt3" id="text">今はまだ煙のようだ</span><br>
+    <span class="txt4" id="text">こんにちは</span><br>
+    </div>
+
+    </div>
+
+    <div class="home-main">
+
+        <div class="menu img-01"><img src="img/20100811140037.jpg" width="91" height="91"></div>
+        <div class="menu img-02"><img src="img/wtips_229_06.jpg" width="91" height="91"></div>
+        <div class="menu img-03"><img src="img/flower.jpg" width="91" height="91"></div>
+        <div class="menu img-04"><img src="img/87527ce8.jpg" width="91" height="91"></div>
+        <div class="menu img-05"><img src="img/b0192383_11201441.jpg" width="91" height="91"></div>
+
+<!--
+        <div class="mini-01"></div>
+        <div class="mini-02"></div>
+        <div class="mini-03"></div>
+        <div class="mini-04"></div>
+        <div class="mini-05"></div>
+        <div class="mini-06"></div>
+        <div class="mini-07"></div>
+        <div class="mini-08"></div>
+        <div class="mini-09"></div>
+        <div class="mini-10"></div>
+        <div class="mini-11"></div>
+        <div class="mini-12"></div>
+        <div class="mini-13"></div>
+-->
+
+        <div class="home"></div>
+
+        <nav>
+            <a href="#" class="menu nav-01">
+                <span class="txt-in">INFORMATION</span>
+                <div class="container">
+                    <div class="normal">
+                    </div>
+                    <div class="hover"></div>
+                    <div class="left"></div>
+                </div>
+            </a>
+            <a href="#" class="menu nav-02">
+                <span class="txt-in">INFORMATION</span>
+                <div class="container">
+                    <div class="normal">
+                    </div>
+                    <div class="hover"></div>
+                    <div class="back"></div>
+                </div>            
+            </a>
+            <a href="#" class="menu nav-03">
+                <span class="txt-in">MAIN</span>
+                <div class="container">
+                    <div class="normal">
+                    </div>
+                    <div class="hover"></div>
+                    <div class="left"></div>
+                </div>
+            </a>
+            <a href="#" class="menu nav-04">
+                <span class="txt-in">INFORMATION</span>
+                <div class="container">
+                    <div class="normal">
+                    </div>
+                    <div class="hover"></div>
+                    <div class="back"></div>
+                </div>            
+            </a>
+            <a href="#" class="menu nav-05">
+                <span class="txt-in">INFORMATION</span>
+                <div class="container">
+                    <div class="normal">
+                    </div>
+                    <div class="hover"></div>
+                    <div class="back"></div>
+                </div>           
+            </a>
+            
+        </nav>
+
+    </div><!-- end.home-main -->
+  
+    <script>
+
+    $(function () {
+    $('.name').textillate({
+      //繰り返し true or false
+      loop: true,
+ 
+      // アニメーションの間隔時間
+      minDisplayTime: 3000,
+  
+      // アニメーション開始までの遅延時間
+      initialDelay: 1000,
+  
+      // アニメーションの自動スタート  true or false
+      autoStart: true,
+ 
+ 
+      // 開始時のアニメーション詳細設定
+      in: {
+        // エフェクト(アニメーション)の指定(デモページにある名称を指定）
+        effect: 'flipInX',
+  
+        // 遅延時間の指数
+        delayScale: 3,
+  
+        // 文字ごとの遅延時間
+        delay: 50,
+  
+        // true:アニメーションをすべての文字に同時適用
+        sync: false,
+  
+        // true:文字表示がランダムな順に表示される
+        shuffle: false
+      },
+ 
+      // 終了時のアニメーション詳細設定
+      out: {
+        effect: 'flipOutX',
+        delayScale: 8,
+        delay: 100,
+        sync: false,
+        shuffle: true,
+        }
+    });
+})
+
+// 歌詞
+
+
+
+    $(function () {
+    $('.txt1').textillate({loop: true});
+    });
+
+$(function hoge() {
+    $('.txt1').hide();
+    setTimeout(function(){
+        $('.txt1').show();
+    },1000);
+
+    $('.txt1').textillate({
+
+      //繰り返し true or false
+      loop: true,
+ 
+      // アニメーションの間隔時間
+      minDisplayTime: 3000,
+  
+      // アニメーション開始までの遅延時間
+      initialDelay: 3000,
+  
+      // アニメーションの自動スタート  true or false
+      autoStart: true,
+ 
+ 
+      // 開始時のアニメーション詳細設定
+      in: {
+        // エフェクト(アニメーション)の指定(デモページにある名称を指定）
+        effect: 'pulse',
+  
+        // 遅延時間の指数
+        delayScale: 6,
+  
+        // 文字ごとの遅延時間
+        delay: 70,
+  
+        // true:アニメーションをすべての文字に同時適用
+        sync: false,
+  
+        // true:文字表示がランダムな順に表示される
+        shuffle: false
+      },
+ 
+      // 終了時のアニメーション詳細設定
+      out: {
+        effect: 'hinge',
+        delayScale: 30,
+        delay: 130,
+        sync: false,
+        shuffle: true,
+        callback : function() {
+        $('.txt1').css("display", "none");
+        }
+      }
+    });
+})
+
+$(function () {
+    $('.txt2').textillate({loop: true});
+    })
+    $(function () {
+        $('.txt2').hide();
+        setTimeout(function(){
+            $('.txt2').show();
+        },1000);
+
+        $('.txt2').textillate({
+          //繰り返し true or false
+          loop: true,
+     
+          // アニメーションの間隔時間
+          minDisplayTime: 3000,
+      
+          // アニメーション開始までの遅延時間
+          initialDelay: 8000,
+      
+          // アニメーションの自動スタート  true or false
+          autoStart: true,
+     
+     
+          // 開始時のアニメーション詳細設定
+          in: {
+            // エフェクト(アニメーション)の指定(デモページにある名称を指定）
+            effect: 'pulse',
+      
+            // 遅延時間の指数
+            delayScale: 6,
+      
+            // 文字ごとの遅延時間
+            delay: 70,
+      
+            // true:アニメーションをすべての文字に同時適用
+            sync: false,
+      
+            // true:文字表示がランダムな順に表示される
+            shuffle: false
+          },
+     
+          // 終了時のアニメーション詳細設定
+          out: {
+            effect: 'hinge',
+            delayScale: 25,
+            delay: 80,
+            sync: false,
+            shuffle: true,
+            callback : function() {
+            $('.txt2').css("display", "none");
+            }
+          }
+        });
+    })
+
+$(function () {
+    $('.txt3').textillate({loop: true});
+    })
+    $(function () {
+        $('.txt3').hide();
+        setTimeout(function(){
+            $('.txt3').show();
+        },1000);
+
+        $('.txt3').textillate({
+          //繰り返し true or false
+          loop: true,
+     
+          // アニメーションの間隔時間
+          minDisplayTime: 3000,
+      
+          // アニメーション開始までの遅延時間
+          initialDelay: 9000,
+      
+          // アニメーションの自動スタート  true or false
+          autoStart: true,
+     
+     
+          // 開始時のアニメーション詳細設定
+          in: {
+            // エフェクト(アニメーション)の指定(デモページにある名称を指定）
+            effect: 'pulse',
+      
+            // 遅延時間の指数
+            delayScale: 6,
+      
+            // 文字ごとの遅延時間
+            delay: 70,
+      
+            // true:アニメーションをすべての文字に同時適用
+            sync: false,
+      
+            // true:文字表示がランダムな順に表示される
+            shuffle: false
+          },
+     
+          // 終了時のアニメーション詳細設定
+          out: {
+            effect: 'hinge',
+            delayScale: 25,
+            delay: 80,
+            sync: false,
+            shuffle: true,
+            callback : function() {
+            $('.txt3').css("display", "none");
+            }
+          }
+        });
+    })
+
+    $(function () {
+    $('.txt4').textillate({loop: true});
+    });
+
+$(function hoge() {
+    $('.txt4').hide();
+    setTimeout(function(){
+        $('.txt4').show();
+    },1000);
+
+    $('.txt4').textillate({
+
+      //繰り返し true or false
+      loop: true,
+ 
+      // アニメーションの間隔時間
+      minDisplayTime: 3000,
+  
+      // アニメーション開始までの遅延時間
+      initialDelay: 3000,
+  
+      // アニメーションの自動スタート  true or false
+      autoStart: true,
+ 
+ 
+      // 開始時のアニメーション詳細設定
+      in: {
+        // エフェクト(アニメーション)の指定(デモページにある名称を指定）
+        effect: 'pulse',
+  
+        // 遅延時間の指数
+        delayScale: 6,
+  
+        // 文字ごとの遅延時間
+        delay: 70,
+  
+        // true:アニメーションをすべての文字に同時適用
+        sync: false,
+  
+        // true:文字表示がランダムな順に表示される
+        shuffle: false
+      },
+ 
+      // 終了時のアニメーション詳細設定
+      out: {
+        effect: 'hinge',
+        delayScale: 30,
+        delay: 130,
+        sync: false,
+        shuffle: true,
+        callback : function() {
+        $('.txt4').css("display", "none");
+        }
+      }
+    });
+})
+
+     $( function () {
+
+        // 文字列取得
+        var hoge = $('#text').text();
+        // 文字列を一文字ずつ分割
+        var TextArr = hoge.split('');
+        // 分割したテキストを「,」で区切る
+        var afterText = '';
+        for (var i = 0; i < TextArr.length; i++) {
+            afterText += TextArr[i] + ',';
+        }
+        console.log(TextArr);
+        // テキストの挿入
+        // document.getElementById('after').innerHTML = afterText;
+
+        // var txt = (#text).text();
+        // console.log(txt);
+        // Math.floor(Math.random() * txt.length);
+        // console.log(txt);
+
+    });
+
+    $(document).ready(function() {
+ 
+
+        try {
+            $('body').ripples({
+                resolution: 1200,
+                dropRadius: 1000,
+                perturbance: 0.04,
+            });
+        }
+        catch (e) {
+           $('.error').show().text(e);
+        }
+        setInterval(function() {
+            var $el = $('body');
+            var x = Math.random() * $el.outerWidth();
+            var y = Math.random() * $el.outerHeight();
+            var resolution = 10;
+            var dropRadius = 20;
+            var strength = 0.04 + Math.random() * 0.04;
+            $el.ripples('drop', x, y, dropRadius, strength);
+        }, 470);
+    });
+
+    $(document).ready(function() {
+ 
+
+        try {
+            $('.home-main').ripples({
+                resolution: 1200,
+                dropRadius: 1000,
+                perturbance: 0.04,
+            });
+        }
+        catch (e) {
+           $('.error').show().text(e);
+        }
+        setInterval(function() {
+            var $el = $('.home-main');
+            var x = Math.random() * $el.outerWidth();
+            var y = Math.random() * $el.outerHeight();
+            var resolution = 10;
+            var dropRadius = 20;
+            var strength = 0.04 + Math.random() * 0.04;
+            $el.ripples('drop', x, y, dropRadius, strength);
+        }, 1070);
+    });
+
+</script>
+    
+</body>
+</html>

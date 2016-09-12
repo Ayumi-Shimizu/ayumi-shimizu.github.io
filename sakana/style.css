@@ -1,0 +1,464 @@
+html,body {
+    height: 100%;
+    width: 100%;
+}
+.home-main {
+    position: absolute;
+    top:1600px;
+    left:-500px;
+    bottom:0;
+    right:0;
+    margin: auto;
+    width: 100%;
+    height: 800px;
+}
+.img-01 {
+	background-color: hotpink;
+	width: 91px;
+	height: 91px;
+    top: 116px;
+    left:-298px;
+    opacity: 0.4;
+}
+.img-02 {
+	background-color: mediumspringgreen;
+	width: 91px;
+	height: 91px;
+    top: 298px;
+    left: 116px;
+    color: #000;
+    opacity: 0.45;
+}
+.img-03 {
+	background-color: gold;
+	width: 91px;
+	height: 91px;
+    top: -116px;
+    left: 529px;
+    opacity: 0.55;
+}
+.img-04 {
+	background-color: steelblue;
+	width: 91px;
+	height: 91px;
+    top: 480px;
+    left: 529px;
+    opacity: 0.65;
+}
+.img-05 {
+	background-color: red;
+	width: 91px;
+	height: 91px;
+    top: -298px;
+    left: -298px;
+    opacity: 0.5;
+}
+/*
+.mini-01 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-02 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-03 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-04 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-05 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-06 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-07 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-08 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-09 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-10 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-11 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-12 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+.mini-13 {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+}
+*/
+.home {
+	background-color: lightblue;
+	width: 207px;
+	height: 207px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+.txt-in {
+    color: #FFF;
+}
+.txt-auto {
+    color: #2d2d2d;
+    transform: rotateY(180deg);
+}
+.home {
+    background-image: url(img/5289341e-e8c0-4e93-a98e-2f3ded70b30f.jpg);
+    opacity: 0.4;
+}
+.nav-01 {
+	background-color: #2d2d2d;
+    opacity: 0.6;
+	width: 256px;
+	height: 116px;
+    top: -91px;
+	left: -463px;
+}
+.nav-01:hover {
+/*
+    -webkit-transform: translateZ(0px) rotateX(-90deg);
+    -moz-transform: translateZ(0px) rotateX(-90deg);
+    -ms-transform: translateZ(0px) rotateX(-90deg);
+    -o-transform: translateZ(0px) rotateX(-90deg);
+*/
+    transform: translateX(0px) rotateY(180deg);
+}
+.nav-01 .normal {
+/*
+    -webkit-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -moz-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -ms-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -o-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+*/
+    transform: rotateX(-180deg) translateZ(120px) translateX(0px);
+    
+    background-color: #fff;
+    opacity: 0.2;
+	width: 256px;
+	height: 116px;
+}
+.nav-01 .hover {
+    transform:rotateY(90deg) translateZ(94px) translateX(66px);
+    background-color: #fff;   
+    opacity: 0.2;
+	width: 125px;
+	height: 116px;
+    position: absolute;
+    top:0px;
+    left:100px;	
+}
+.nav-01 .left {
+    transform:rotateY(90deg) translateZ(92px) translateX(64px);
+    background-color: #fff;
+    opacity: 0.2;
+	width: 122px;
+	height: 116px;
+    position: absolute;
+    top:0px;
+    left:-152px;	
+}
+.nav-02 {
+    background-color: #2d2d2d;
+    opacity: 0.6;
+    width: 207px;
+    height: 91px;
+    top: -298px;
+    left: 0px;
+
+}
+.nav-02:hover {
+/*    -webkit-transform: translateZ(0px) rotateX(-90deg);
+    -moz-transform: translateZ(0px) rotateX(-90deg);
+    -ms-transform: translateZ(0px) rotateX(-90deg);
+    -o-transform: translateZ(0px) rotateX(-90deg);
+*/
+    transform: translateY(0px) rotateX(180deg);
+    
+}
+.nav-02 .normal {
+/*
+    -webkit-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -moz-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -ms-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -o-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+*/
+    transform: rotateX(90deg) translateZ(106px) translateX(-1px) translateY(-43px);
+    
+    background-color: #fff;
+    opacity: 0.2;
+    width: 207px;
+    height: 51px;
+    position: absolute;
+    top:80px;
+    left:0px;
+}
+.nav-02 .hover {
+/*
+    -webkit-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+    -moz-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+    -ms-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+    -o-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+*/
+    transform: rotateX(90deg) translateZ(-66px) translateY(-44px);
+
+    background-color: #fff; 
+    opacity: 0.2;  
+    width: 207px;
+    height: 51px;
+}
+.nav-02 .back {
+    transform: rotateX(0deg) translateZ(-67px) translateY(0px);
+    background-color: #fff;
+    opacity: 0.2;
+    width: 207px;
+    height: 91px;
+    position: absolute;
+    top:0px;
+    left:0px;    
+}
+.nav-03 {
+	background-color: #2d2d2d;
+    opacity: 0.6;
+	width: 116px;
+	height: 229px;
+    top: -254px;
+	left: 323px;
+}
+.nav-03:hover {
+     transform: translateX(2px) rotateY(180deg);
+}
+.nav-03 .normal {
+/*
+    -webkit-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -moz-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -ms-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -o-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+*/
+    transform: rotateX(-180deg) translateZ(70px) translateX(37px);
+    
+    background-color: #fff;
+    opacity: 0.2;
+	width: 116px;
+	height: 229px;
+    position: absolute;
+    top:0;
+    left:-37px;
+}
+.nav-03 .hover {
+    transform:rotateY(90deg) translateZ(94px) translateX(43px);
+
+    background-color: #fff; 
+    opacity: 0.6;
+	width: 78px;
+	height: 229px;
+    position: absolute;
+    top:0px;
+    left:-17px;	
+}
+.nav-03 .left {
+    transform:rotateY(90deg) translateZ(91px) translateX(40px);
+
+    background-color: #fff;   
+	width: 80px;
+	height: 229px;
+    position: absolute;
+    top:0px;
+    left:-130px;	
+}
+
+.nav-04 {
+	background-color: #2d2d2d;
+    opacity: 0.6;
+	width: 207px;
+	height: 207px;
+    top: 182px;
+	left: 416px;
+
+}
+.nav-04:hover {
+/*    -webkit-transform: translateZ(0px) rotateX(-90deg);
+    -moz-transform: translateZ(0px) rotateX(-90deg);
+    -ms-transform: translateZ(0px) rotateX(-90deg);
+    -o-transform: translateZ(0px) rotateX(-90deg);
+*/
+    transform: translateY(0px) rotateX(180deg);
+    
+}
+.nav-04 .normal {
+/*
+    -webkit-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -moz-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -ms-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -o-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+*/
+    transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
+    
+    background-color: #fff;
+    opacity: 0.2;
+	width: 207px;
+	height: 51px;
+    position: absolute;
+    top:77px;
+    left:0px;
+}
+.nav-04 .hover {
+/*
+	-webkit-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+    -moz-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+    -ms-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+    -o-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+*/
+    transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
+
+    background-color: #fff; 
+    opacity: 0.2;  
+	width: 207px;
+	height: 51px;
+}
+.nav-04 .back {
+    transform: rotateX(0deg) translateZ(-48px) translateY(0px);
+    background-color: #fff;
+    opacity: 0.2;
+    width: 207px;
+    height: 207px;
+    position: absolute;
+    top:0px;
+    left:0px;    
+}
+.nav-05 {
+	background-color: #2d2d2d;
+    opacity: 0.6;
+	width: 207px;
+	height: 207px;
+    top: 414px;
+	left: -182px;
+}
+.nav-05:hover {
+/*    -webkit-transform: translateZ(0px) rotateX(-90deg);
+    -moz-transform: translateZ(0px) rotateX(-90deg);
+    -ms-transform: translateZ(0px) rotateX(-90deg);
+    -o-transform: translateZ(0px) rotateX(-90deg);
+*/
+    transform: translateY(0px) rotateX(180deg);
+    
+}
+.nav-05 .normal {
+/*
+    -webkit-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -moz-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -ms-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+    -o-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
+*/
+    transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
+    
+    background-color: #fff;
+    opacity: 0.2;
+    width: 207px;
+    height: 51px;
+    position: absolute;
+    top:77px;
+    left:0px;
+}
+.nav-05 .hover {
+/*
+    -webkit-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+    -moz-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+    -ms-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+    -o-transform: transform: rotateX(90deg) translateZ(136px) translateY(-44px);
+*/
+    transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
+
+    background-color: #fff; 
+    opacity: 0.2;  
+    width: 207px;
+    height: 51px;
+}
+.nav-05 .back {
+    transform: rotateX(0deg) translateZ(-48px) translateY(0px);
+    background-color: #fff;
+    opacity: 0.2;
+    width: 207px;
+    height: 207px;
+    position: absolute;
+    top:0px;
+    left:0px;    
+}
+.menu {
+	position: absolute;
+    bottom: 0;
+	right: 0;
+	margin: auto; 
+    
+    /* 指定した要素の子要素が、 3D空間の中でフラットに（平らに）描画されるか、立体的に描画されるかを指定する際に使用する */
+	-webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+          -ms-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform .7s;
+         -moz-transition: -moz-transform .7s;
+          -ms-transition: -ms-transform .7s;
+           -o-transition: -o-transform .7s;
+              transition: transform .7s;
+    transform:perspective(500px);
+     color: #000;
+
+}
+.normal,
+.hover,
+.back {
+      -webkit-transition: all .7s;
+         -moz-transition: all .7s;
+          -ms-transition: all .7s;
+           -o-transition: all .7s;
+              transition: all .7s;  
+}
+
+.menu:hover {
+    text-decoration: none;
+}
+.menu .txt-in {
+    text-decoration: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    bottom: 0px;
+    right: 0;
+    transform:rotateY(0deg);
+}
