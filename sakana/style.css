@@ -217,7 +217,7 @@ html,body {
     transform:rotateY(90deg) translateZ(94px) translateX(43px);
 
     background-color: #fff; 
-    opacity: 0.6;
+    opacity: 0.2;
 	width: 78px;
 	height: 229px;
     position: absolute;
@@ -227,7 +227,8 @@ html,body {
 .nav-03 .left {
     transform:rotateY(90deg) translateZ(91px) translateX(40px);
 
-    background-color: #fff;   
+    background-color: #fff;
+    opacity: 0.2;
 	width: 80px;
 	height: 229px;
     position: absolute;
@@ -370,8 +371,6 @@ html,body {
            -o-transition: -o-transform .7s;
               transition: transform .7s;
     transform:perspective(500px);
-     color: #000;
-
 }
 .normal,
 .hover,
@@ -389,9 +388,24 @@ html,body {
 .menu .txt-in {
     text-decoration: none;
     position: absolute;
+}
+.nav-01 .txt-in {
     top: 50px;
-    left: 20px;
-    bottom: 0px;
-    right: 0;
-    transform:rotateY(0deg);
+    left: 37px;
+}
+.nav-02 .txt-in {
+    top: 40px;
+    left: 24px;
+}
+.nav-03 .txt-in {
+    top: 107px;
+    left: 22px;
+}
+.nav-04 .txt-in {
+    top: 90px;
+    left: 22px;
+}
+.nav-05 .txt-in {
+    top: 90px;
+    left: 22px;
 }
