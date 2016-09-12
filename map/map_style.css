@@ -1,0 +1,139 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,body {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    font-family: 'arial';
+    font-size: 13px;
+  }
+  #map,
+  #map-canvas,
+  #top {
+    width: calc(100% - 282px) ;
+    height: 100%;
+    border: solid 1px #ccc;
+    float: right;
+     position: relative;
+    left: 0;
+    overflow-x: hidden;
+  }
+  .menu {
+    width: 250px;
+    background-color: #fff;
+    height: 100%;
+    float: left;
+    color: #000;
+    padding: 0 15px;
+    position: fixed;
+  }
+  .main-menu li,
+  .map-menu li,
+  .entry-sub li {
+    width: 80px;
+  }
+  .main-menu span,
+  .sub ul span,
+  .map-menu span,
+  .entry-menu ul span {
+    display: block;
+    margin-top: 10px;
+  }
+  .menu ul li {
+    float: left;
+    list-style: none;
+  }
+  .menu ul li a, {
+    text-decoration: none;
+  }
+  .main-menu li,
+  .map-menu li,
+  .entry-menu li {
+    text-align: center;
+    margin: 25px 20px;
+  }
+  ul:before,
+  ul:after {
+    content:"";
+    display:block;
+    overflow:hidden;
+  }
+  ul:after {
+    clear:both;
+  }
+  .menu img:hover {
+    transform: scale(1.3);
+    opacity: 0.7;
+  }
+  .sns-btn img:hover {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  .sns-btn img {
+    margin: 0px 3px;
+ }
+  .sns-btn {
+    float: right;
+    margin: 20px 24px 0px 0px;
+  }
+  .position,
+  .entry-menu {
+    border-top: 1px solid #000;
+    position: relative;
+    margin-top: 20px;
+  }
+  .sub-title {
+    position: absolute;
+    top: -10px;
+    left: 87px;
+    background-color: #FFF;
+    padding: 0px 4px;
+  }
+  .entry-menu ul {
+    list-style: none;
+  }
+  input[type='text'] {
+    width: 170px;
+    padding: 5px;
+    border: none;
+    border: 1px solid #000;
+  }
+  input[type="button"] {
+    border: none;
+    background-color: #FFF;
+    border: 1px solid #000;
+    padding: 4px;
+    margin-left: 6px;
+  }
+  .sub-input {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+  }
+  input[type="button"]:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  input[type="text"]:focus {
+    box-shadow:0 0 4px #8e8eff; /*#000*/
+    ttransition:all 0.3s;
+    transition-duration: 0.3s;
+  }
+  .view {
+    background-color: #000;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
