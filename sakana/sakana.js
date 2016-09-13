@@ -92,8 +92,8 @@ $(function hoge() {
       // 終了時のアニメーション詳細設定
       out: {
         effect: 'hinge',
-        delayScale: 30,
-        delay: 130,
+        delayScale: 9,
+        delay: 600,
         sync: false,
         shuffle: true,
         callback : function() {
@@ -113,6 +113,61 @@ $(function () {
         },1000);
 
         $('.txt2').textillate({
+          //繰り返し true or false
+          loop: true,
+     
+          // アニメーションの間隔時間
+          minDisplayTime: 3000,
+      
+          // アニメーション開始までの遅延時間
+          initialDelay: 5000,
+      
+          // アニメーションの自動スタート  true or false
+          autoStart: true,
+     
+     
+          // 開始時のアニメーション詳細設定
+          in: {
+            // エフェクト(アニメーション)の指定(デモページにある名称を指定）
+            effect: 'pulse',
+      
+            // 遅延時間の指数
+            delayScale: 6,
+      
+            // 文字ごとの遅延時間
+            delay: 70,
+      
+            // true:アニメーションをすべての文字に同時適用
+            sync: false,
+      
+            // true:文字表示がランダムな順に表示される
+            shuffle: false
+          },
+     
+          // 終了時のアニメーション詳細設定
+          out: {
+            effect: 'hinge',
+            delayScale: 25,
+            delay: 120,
+            sync: false,
+            shuffle: true,
+            callback : function() {
+            $('.txt2').css("display", "none");
+            }
+          }
+        });
+    })
+
+$(function () {
+    $('.txt3').textillate({loop: true});
+    })
+    $(function () {
+        $('.txt3').hide();
+        setTimeout(function(){
+            $('.txt3').show();
+        },1000);
+
+        $('.txt3').textillate({
           //繰り返し true or false
           loop: true,
      
@@ -148,62 +203,7 @@ $(function () {
           out: {
             effect: 'hinge',
             delayScale: 25,
-            delay: 80,
-            sync: false,
-            shuffle: true,
-            callback : function() {
-            $('.txt2').css("display", "none");
-            }
-          }
-        });
-    })
-
-$(function () {
-    $('.txt3').textillate({loop: true});
-    })
-    $(function () {
-        $('.txt3').hide();
-        setTimeout(function(){
-            $('.txt3').show();
-        },1000);
-
-        $('.txt3').textillate({
-          //繰り返し true or false
-          loop: true,
-     
-          // アニメーションの間隔時間
-          minDisplayTime: 3000,
-      
-          // アニメーション開始までの遅延時間
-          initialDelay: 9000,
-      
-          // アニメーションの自動スタート  true or false
-          autoStart: true,
-     
-     
-          // 開始時のアニメーション詳細設定
-          in: {
-            // エフェクト(アニメーション)の指定(デモページにある名称を指定）
-            effect: 'pulse',
-      
-            // 遅延時間の指数
-            delayScale: 6,
-      
-            // 文字ごとの遅延時間
-            delay: 70,
-      
-            // true:アニメーションをすべての文字に同時適用
-            sync: false,
-      
-            // true:文字表示がランダムな順に表示される
-            shuffle: false
-          },
-     
-          // 終了時のアニメーション詳細設定
-          out: {
-            effect: 'hinge',
-            delayScale: 25,
-            delay: 80,
+            delay: 120,
             sync: false,
             shuffle: true,
             callback : function() {
@@ -232,7 +232,7 @@ $(function hoge() {
       minDisplayTime: 3000,
   
       // アニメーション開始までの遅延時間
-      initialDelay: 3000,
+      initialDelay: 9500,
   
       // アニメーションの自動スタート  true or false
       autoStart: true,
@@ -259,8 +259,8 @@ $(function hoge() {
       // 終了時のアニメーション詳細設定
       out: {
         effect: 'hinge',
-        delayScale: 30,
-        delay: 130,
+        delayScale: 9,
+        delay: 300,
         sync: false,
         shuffle: true,
         callback : function() {
