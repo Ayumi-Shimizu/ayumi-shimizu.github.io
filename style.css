@@ -39,7 +39,7 @@ header {
 .fa-github:hover {
 	transition: 1.5s;
 	opacity: 0.5;
-	font-size: 60px;
+	font-size: 50px;
 }
 .content {
 	padding: 0px 20px;
