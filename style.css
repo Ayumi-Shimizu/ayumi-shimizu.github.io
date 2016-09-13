@@ -88,7 +88,7 @@ header {
 	padding: 9px;
 }
 .comment h3 {
-	margin: 20px 0px 10px 0px;
+	margin: 10px 0px 10px 0px;
 }
 .comment p {
 	font-size: 13px;
@@ -133,6 +133,7 @@ footer {
 
 .col,
 .about:before,
+
 .col,
 .about:after {
     content:"";

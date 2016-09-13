@@ -51,7 +51,8 @@
     var marker = new google.maps.Marker({
       position: latlng,
       map: mapConfig.mapElm,
-      title: '現在地'
+      title: '現在地',
+      icon: 'icon1.png'
     });
 
     new google.maps.Circle({
@@ -68,18 +69,26 @@
 
   var marker = [];
   var infoWindow = [];
+  var noImage = 'http://fakeimg.pl/350x200/?text=Noimage';
 
   // ぐるなび検索結果からピンを立てる
   function showResult(result) {
     if ( result.total_hit_count > 0 ) {
 
-      for(var i = 0; i < result.rest.length; i++){　　　
+      for(var i = 0; i < result.rest.length; i++){
+        var img = result.rest[i].image_url.shop_image1.length > 0 ? result.rest[i].image_url.shop_image1 : noImage;
+        var opentime = typeof(result.rest[i].opentime) === 'string' ? result.rest[i].opentime : '';
+          // if(typeof(result.rest[i].opentime) === 'string') {
+          //   var opentime = result.rest[i].opentime;
+          // } else {
+          //   var opentime = "";
+          // }
+
         var point = new google.maps.LatLng(result.rest[i].latitude, result.rest[i].longitude);
         marker[i] = new google.maps.Marker({position: point, map: mapConfig.mapElm});
         infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
-          content: '<div class="sample">' + result.rest[i].name + '</div>' // 吹き出しに表示する内容
+          content: '<div class="infoWindow">' + '<span class="result-name">' + result.rest[i].name + '</span>' + '<a href="' + result.rest[i].url + '" class="result-url">' + 'shop url' + '</a>' + '<span class="result-time">' + opentime + '</span>' + '<img src="' + img + '" class="result-img" width="200px" height="150px">' + '</div>' // 吹き出しに表示する内容
         });
-
         markerEvent(i);
       }
 
@@ -87,6 +96,7 @@
       alert( '検索結果が見つかりませんでした。' );
     }
   }
+
 
 
   // マーカーにクリックイベントを追加
@@ -115,7 +125,9 @@
           mapConfig.mapElm.setCenter(results[0].geometry.location);
           var marker = new google.maps.Marker({
             map: mapConfig.mapElm,
-            position: results[0].geometry.location
+            position: results[0].geometry.location,
+            icon: 'icon1.png'
+
           });
         new google.maps.Circle({
           center: results[0].geometry.location,       // 中心点(google.maps.LatLng)
@@ -183,22 +195,6 @@
         $entryMenu.toggle();
         $canvas.toggle();
       });
-
-
-      var nav = $('.menu');
-      $('.view').on('click', function () {
-        nav.toggleClass('menu-non');
-        if (nav.hasClass('menu-non')) {
-          nav.animate({
-            left : '-280px'
-          },3000);
-        } else if (!nav.hasClass('menu-non')) {
-          nav.animate({
-            left : '0px'
-          },3000);
-        }
-      });
-
     });
 
 })();
