@@ -390,6 +390,22 @@ html,body {
     position: absolute;
 }
 .nav-01 .txt-in {
+    top: 40px;
+    left: 30px;
+}
+.nav-02 .txt-in {
+    top: 40px;
+    left: 30px;
+}
+.nav-03 .txt-in {
+    top: 90px;
+    left: 30px;
+}
+.nav-04 .txt-in {
+    top: 100px;
+    left: 30px;
+}
+.nav-05 .txt-in {
     top: 100px;
     left: 30px;
 }
