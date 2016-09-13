@@ -2,10 +2,6 @@ html,body {
     height: 100%;
     width: 100%;
 }
-html,body {
-    width: 100%;
-    height: 100%;        
-}
 body {
     font-family: 'Batang';
     background-color: #2d2d2d; /* #eee; */
@@ -115,21 +111,21 @@ body {
 	left: -463px;
 }
 .nav-01:hover {
-/*
+
     -webkit-transform: translateX(0px) rotateY(180deg);
     -moz-transform: translateX(0px) rotateY(180deg);
     -ms-transform: translateX(0px) rotateY(180deg);
     -o-transform: translateX(0px) rotateY(180deg);
-*/
+
     transform: translateX(0px) rotateY(180deg);
 }
 .nav-01 .normal {
-/*
+
     -webkit-transform: rotateX(-180deg) translateZ(120px) translateX(0px);
     -moz-transform: rotateX(-180deg) translateZ(120px) translateX(0px);
     -ms-transform: rotateX(-180deg) translateZ(120px) translateX(0px);
     -o-transform: rotateX(-180deg) translateZ(120px) translateX(0px);
-*/
+
     transform: rotateX(-180deg) translateZ(120px) translateX(0px);
     
     background-color: #fff;
@@ -167,21 +163,21 @@ body {
 
 }
 .nav-02:hover {
-/*    -webkit-transform: translateY(0px) rotateX(180deg);
+    -webkit-transform: translateY(0px) rotateX(180deg);
     -moz-transform: translateY(0px) rotateX(180deg);
     -ms-transform: translateY(0px) rotateX(180deg);
     -o-transform: translateY(0px) rotateX(180deg);
-*/
+
     transform: translateY(0px) rotateX(180deg);
     
 }
 .nav-02 .normal {
-/*
-    -webkit-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
-    -moz-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
-    -ms-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
-    -o-transform: rotateX(-90deg) translateZ(45px) translateY(44.3px);
-*/
+
+    -webkit-transform: rotateX(90deg) translateZ(106px) translateX(-1px) translateY(-43px);
+    -moz-transform: rotateX(90deg) translateZ(106px) translateX(-1px) translateY(-43px);
+    -ms-transform: rotateX(90deg) translateZ(106px) translateX(-1px) translateY(-43px);
+    -o-transform: rotateX(90deg) translateZ(106px) translateX(-1px) translateY(-43px);
+
     transform: rotateX(90deg) translateZ(106px) translateX(-1px) translateY(-43px);
     
     background-color: #fff;
@@ -193,12 +189,12 @@ body {
     left:0px;
 }
 .nav-02 .hover {
-/*
+
     -webkit-transform: rotateX(90deg) translateZ(-66px) translateY(-44px);
     -moz-transform: rotateX(90deg) translateZ(-66px) translateY(-44px);
     -ms-transform: rotateX(90deg) translateZ(-66px) translateY(-44px);
     -o-transform: rotateX(90deg) translateZ(-66px) translateY(-44px);
-*/
+
     transform: rotateX(90deg) translateZ(-66px) translateY(-44px);
 
     background-color: #fff; 
@@ -228,12 +224,12 @@ body {
      transform: translateX(2px) rotateY(180deg);
 }
 .nav-03 .normal {
-/*
+
     -webkit-transform: rotateX(-180deg) translateZ(70px) translateX(37px);
     -moz-transform: rotateX(-180deg) translateZ(70px) translateX(37px);
     -ms-transform: rotateX(-180deg) translateZ(70px) translateX(37px);
     -o-transform: rotateX(-180deg) translateZ(70px) translateX(37px);
-*/
+
     transform: rotateX(-180deg) translateZ(70px) translateX(37px);
     
     background-color: #fff;
@@ -277,21 +273,21 @@ body {
 
 }
 .nav-04:hover {
-/*    -webkit-transform: translateY(0px) rotateX(180deg);
+    -webkit-transform: translateY(0px) rotateX(180deg);
     -moz-transform: translateY(0px) rotateX(180deg);
     -ms-transform: translateY(0px) rotateX(180deg);
     -o-transform: translateY(0px) rotateX(180deg);
-*/
+
     transform: translateY(0px) rotateX(180deg);
     
 }
 .nav-04 .normal {
-/*
+
     -webkit-transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
     -moz-transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
     -ms-transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
     -o-transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
-*/
+
     transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
     
     background-color: #fff;
@@ -303,12 +299,12 @@ body {
     left:0px;
 }
 .nav-04 .hover {
-/*
+
 	-webkit-transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
     -moz-transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
     -ms-transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
     -o-transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
-*/
+
     transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
 
     background-color: #fff; 
@@ -335,21 +331,21 @@ body {
 	left: -182px;
 }
 .nav-05:hover {
-/*    -webkit-transform: translateY(0px) rotateX(180deg);
+    -webkit-transform: translateY(0px) rotateX(180deg);
     -moz-transform: translateY(0px) rotateX(180deg);
     -ms-transform: translateY(0px) rotateX(180deg);
     -o-transform: translateY(0px) rotateX(180deg);
-*/
+
     transform: translateY(0px) rotateX(180deg);
     
 }
 .nav-05 .normal {
-/*
+
     -webkit-transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
     -moz-transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
     -ms-transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
     -o-transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
-*/
+
     transform: rotateX(88deg) translateZ(102px) translateX(-1px) translateY(-30px);
     
     background-color: #fff;
@@ -361,12 +357,12 @@ body {
     left:0px;
 }
 .nav-05 .hover {
-/*
+
     -webkit-transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
     -moz-transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
     -ms-transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
     -o-transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
-*/
+
     transform: rotateX(90deg) translateZ(-182px) translateY(-20px);
 
     background-color: #fff; 
@@ -430,7 +426,7 @@ body {
 }
 .nav-03 .txt-in {
     top: 90px;
-    left: 26px;
+    left: 18px;
 }
 .nav-04 .txt-in {
     top: 80px;
