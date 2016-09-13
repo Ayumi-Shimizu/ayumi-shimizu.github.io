@@ -77,13 +77,10 @@
         var point = new google.maps.LatLng(result.rest[i].latitude, result.rest[i].longitude);
         marker[i] = new google.maps.Marker({position: point, map: mapConfig.mapElm});
         infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
-          content: '<div class="sample">' + result.rest[i].name  +  '</div>' // 吹き出しに表示する内容
+          content: '<div class="sample">' + result.rest[i].name + '</div>' // 吹き出しに表示する内容
         });
-        // result.rest[i].url
 
         markerEvent(i);
-          console.log(result.rest[i]);
-
       }
 
     } else {
