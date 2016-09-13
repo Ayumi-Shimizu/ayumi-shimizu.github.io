@@ -1,0 +1,41 @@
+.link-wrapper {
+	p {
+		font-size: 20px;
+		margin-bottom: 10px;
+		margin-top: 30px;
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			font-size: 14px;
+		}
+	}
+	a {
+		color: #3372df;
+		font-size: 17px;
+		text-decoration: none;
+		&:nth-child(4),
+		&:nth-child(1) {
+			text-decoration: underline;
+		}
+		&:nth-child(1) {
+			font-size: 14px;
+		}
+		&:hover {
+			color: #404040;
+			text-decoration: none;
+		}
+	}
+}
+
+ /*Breadcrumbs----------------------------------*/
+
+.pankz-wrapper {
+	a {
+		font-size: 14px;
+		color: #000;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,218 @@
+/*item-menu-----------------------------------*/
+.menu-nav01 li {
+  float: left;
+  list-style: none;
+  margin-right: 20px;
+  font-weight: bold;
+  border-top: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  margin-bottom: -1px;
+}
+.menu-nav01 li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.menu-nav01 li a:hover {
+  background-color: #f7f7f7;
+  color: #7787c9;
+}
+.menu-p {
+  padding:20px;
+  background-color: #f7f7f7;
+  border: 1px solid #dcdcdc
+}
+.menu {
+  margin-bottom: 100px;
+}
+/*clearfix------*/
+.menu-nav01:before,
+.menu-nav01:after {
+  content: "";
+  display: table;
+}
+.menu-nav01:after {
+  clear: both;
+}
+/*item-menu2-------------------------*/
+.menu-nav02 li a {
+  display: block;
+  font-weight: normal;
+  text-decoration: none;
+  color: #000;
+}
+.menu-nav02 li a:hover {
+  background-color: #fff;
+  color: #7787c9;
+}
+.menu-p2 {
+  background-color: #fff;
+  padding: 20px 20px 20px 10px;
+  border-top: 1px solid #dcdcdc
+}
+
+  /*CENTERED NAVIGATION---------------*/
+  .nav {
+    background-color: #E7F1EC;
+    margin-bottom: 300px;
+}
+  .nav-bar {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: rgba(51, 51, 51, 0.7);
+  }
+  .nav-bar li {
+    list-style-type: none;
+  }
+  .nav-bar > li {
+    float: left;
+  }
+  .nav-bar li a:hover {
+    color: #000;
+  }
+  /*clearfix-----------------*/
+    .nav-bar:before,
+    .nav-bar:after {
+      content:"";
+      display: table;
+    }
+  .nav-bar:after {
+     clear: both;
+  }
+ .nav .nav-more {
+   position: relative;
+  }
+  .nav .nav-sub {
+    position: absolute;
+    width: 200px;
+    background-color: #E7F1EC;
+    display: none;
+  }
+  .nav .nav-more:hover  > .nav-sub {
+    display: block;
+  }
+
+  .nav-sub.nav-sub02 li a {
+    color: rgba(51, 51, 51, 0.7);
+  }
+/*  .nav-sub.nav-sub02 li {
+    display: none;
+  }*/
+/*  .nav-sub.nav-sub02 {
+    display: none;
+  }*/
+  .nav-sub.nav-sub02 {
+   width: 200px;
+   position: relative;
+  }
+/*  .nav-more02:hover .nav-sub02 li {
+    display: block;
+}*/
+/*.nav-more02:hover .nav-sub02 {
+  display: block;
+  background: red;
+}*/
+  .nav-more02:hover .nav-sub02 {
+    background-color: #E7F1EC;
+    position: absolute;
+    top: 0;
+    left: 200px;
+  }
+  .nav-sub02 li a:hover {
+    color: #000;
+  }
+  /*Dropdowns--------------------------------------*/
+
+.dropdown-wrapper {
+  width: 800px;
+  font-size: 13px;
+  color: #000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  min-height: 140px;
+}
+.dropdown-body {
+  background-color: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+.dropdown-body a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  position: relative;
+}
+.dropdown-body a:focus {
+  background-color: #e7e7e7;
+}
+.dropdown-list {
+  width: 160px;
+  list-style-type: none;
+  border: 1px solid #000;
+  font-size: 12px;
+  padding: 5px 0;
+  position: absolute;
+}
+.dropdown-list li a {
+  display: block;
+  padding: 5px 15px;
+}
+.dropdown-list a {
+  text-decoration: none;
+}
+.list-border {
+  border-top: 1px solid #e5e5e5;
+  margin: 5px 0;
+}
+.dropdown-name {
+  display: inline-block;
+  font-size: 17px;
+  color: #5e5e5e;
+  margin: 10px;
+}
+.list-1 {
+  margin: 0 128px;
+}
+.dropdown-list.list-2 {
+  margin: 0 222px;
+}
+
+/*SLIDING PANEL--------------------------------------*/
+.slide-menu-wrapper {
+  width: 70%;
+  margin: 0 auto; }
+  .slide-menu-wrapper .slide-menu {
+    padding: 20px;
+    font-size: 16px; }
+
+.slide-list {
+  position: fixed;
+  top: 0;
+  left: -20%;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  left: -20%;
+  background-color: #404040; }
+  .slide-list li {
+    list-style: none; }
+  .slide-list a {
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    padding: 15px 0;
+    padding-left: 15px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .slide-list a:hover {
+      background-color: #477dca; }
+

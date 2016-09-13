@@ -1,0 +1,272 @@
+ /*Forms-----------------------------------*/
+
+ form{
+   font-size: 14px;
+ }
+ form p {
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ label[for="email"],
+ label[for="pass"],
+ label[for="file"],
+ label[for="check"],
+ label[for="name"] {
+   font-weight: bold;
+ }
+ .forms-name,
+ .forms-pass,
+ .inline-name,
+ .inline-email {
+   width: 700px;
+   height: 30px;
+   border-radius: 4px;
+   border: 1px solid #ddd;
+   margin-top: 5px;
+   outline: 0;
+   border: 1px solid #ddd;
+   -webkit-transition: all .3s;
+   transition: all .3s;
+   font-size: 15px;
+   padding-left: 10px;
+ }
+ input[type="text"]:focus,
+ textarea:focus {
+  box-shadow: 0 0 7px skyblue;
+  border: 1px solid skyblue;
+}
+input[type="file"]{
+  font-size: 14px;
+}
+.form-wrapper p.text {
+  color: #737373;
+}
+label[for="check"] {
+  margin-left: 10px;
+}
+button[type="submit"] {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-top: 5px;
+  }
+button[type="submit"]:hover {
+  background-color: #e6e6e6;
+}
+
+ /*Inline form-----------------------------------*/
+
+ .inline-name,
+ .inline-email {
+   width: 150px;
+   height: 35px;
+   border-radius: 4px;
+ }
+ /*Textarea-------------------------------------*/
+
+textarea {
+  font-size: 14px;
+  padding:10px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid #ddd;
+  outline: 0;
+}
+ /*Checkboxes and radios-------------------------*/
+ 
+  input[type="checkbox"],
+  label[for="check1"],
+  label[for="check2"],
+  input[type="radio"],
+  label[for="radio1"],
+  label[for="radio2"],
+  label[for="radio3"] {
+    padding-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 400px;
+  }
+  input[value="option-two"],
+  label[for="check2"],
+  input[value="radio-three"],
+  label[for="radio3"] {
+    cursor: not-allowed;
+  }
+.check-radio-wrapper p:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+ /*Inline checkboxes and radios----------------------*/
+ 
+ .inline-checkbox {
+   font-size: 14px;
+ }
+ input[type="checkbox"],
+ input[type="radio"] {
+   margin-right: 10px;
+ }
+ label[for="inline-1"],
+ label[for="inline-2"],
+ label[for="inline-3"],
+ label[for="inline-radio1"],
+ label[for="inline-radio2"],
+ label[for="inline-radio3"] {
+   margin-right: 10px;
+ }
+
+ /*select-------------------------------------------*/
+
+ .form-select {
+   width: 800px;
+   padding: 10px;
+   font-size: 14px;
+   border: 1px solid #ddd;
+   -webkit-transition: all .3s;
+   transition: all .3s;
+   outline: 0;
+}
+.form-select:focus {
+  box-shadow: 0 0 7px skyblue;
+  border: 1px solid skyblue;
+ }
+
+// Live demo
+
+.btn-demo-modal {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  .click-btn a {
+    display: inline-block;
+    background-color: #337ab7;
+    border: 1px solid #2e6da4;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    &:hover {
+      background-color: #286090;
+      border: 1px solid #204d74;
+    }
+  }
+}
+  .modal-main {
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index: 99;
+      .modal-content {
+        position:relative;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 450px;
+        background-color: #FFF;
+        padding: 20px;
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        border: 1px solid #ccc;
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+                box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      }
+
+  h1 {
+    font-size: 18px;
+    padding-buttom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .modal-text {
+    font-size: 13px;
+  }
+  }
+  .modal-main-footer {  
+    text-align: right;
+    margin: 10px 0;
+    .modal-close-btn,
+    .modal-save-btn {
+      display: inline-block;
+    }
+    .modal-close-btn a,
+    .modal-save-btn a {
+      padding: 2px 8px;
+      font-size: 14px;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .modal-close-btn a {
+      border: 1px solid #ccc;
+      color: #000;
+      margin-right: 5px;
+        &:hover {
+          background-color: #e6e6e6;
+          border-color: #adadad;
+        }
+    }
+    .modal-save-btn a {
+      background-color: #337ab7;
+      border: 1px solid #2e6da4;
+      color: #fff;
+      &:hover {
+        background-color: #286090;
+        border-color: #204d74;
+      }
+    }
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+
+
+  //   .modal-close-btn {
+  //     display: inline-block;
+  //     .modal-close-btn a {
+  //     text-decoration: none;
+  //     }
+  //     &:hover {
+  //       background-color: #e6e6e6;
+  //       border:#adadad;
+  //     }
+  //   }
+  //   .modal-save-btn {
+  //     background-color: #337ab7;
+  //     border: 1px solid #2e6da4;
+  //     &:hover {
+  //       background-color: #286090;
+  //       border: #204d74;
+  //     }
+  //   }
+  // }
+
+
+
+
+
+
+
+
+
+
+
+

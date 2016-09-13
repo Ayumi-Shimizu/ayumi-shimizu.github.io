@@ -1,0 +1,299 @@
+
+ /*option-------------------------------------------*/
+
+ .btn {
+   padding: 10px;
+   border: 1px solid;
+   border-radius: 4px;
+   font-size: 14px;
+   color: #fff;
+   -webkit-transition: all .7s;
+   transition: all .7s;
+   margin: 5px 0 5px 0;
+ }
+ .btn-default {
+   background-color: #fff;
+   border-color: #ccc;
+   color: #000;
+ }
+ .btn-primary {
+   background-color: #337ab7;
+   border-color: #2e6da4;
+ }
+ .btn-success {
+   background-color: #5cb85c;
+   border-color: #4cae4c;
+ }
+ .btn-info {
+   background-color: #5bc0de;
+   border-color: #46b8da;
+ }
+ .btn-warning {
+   background-color: #f0ad4e;
+   border-color: #eea236;
+ }
+ .btn-danger {
+   background-color: #d9534f;
+   border-color: #d43f3a;
+ }
+ .btn-link {
+   border:none;
+   background-color: #fff;
+   color: #337ab7;
+ }
+ .btn-default:hover {
+   background-color: #e6e6e6;
+   border-color: #adadad ;
+ }
+ .btn-primary:hover {
+   background-color: #286090;
+   border-color: #204d74 ;
+ }
+ .btn-success:hover {
+   background-color: #449d44 ;
+   border-color: #398439 ;
+ }
+ .btn-info:hover {
+   background-color: #31b0d5 ;
+   border-color: #269abc ;
+ }
+ .btn-warning:hover {
+   background-color: #ec971f ;
+   border-color: #d58512 ;
+ }
+ .btn-danger:hover {
+   background-color: #c9302c ;
+   border-color: #ac2925 ;
+ }
+ .btn-link:hover {
+   color: #23527c ;
+   text-decoration: underline;
+ }
+
+ /*button block-------------------------------------------*/
+
+.btn-block {
+  display: block;
+  padding: 10px 100px;
+  font-size: 17px;
+  border: 1px solid;
+  border-radius: 6px;
+   -webkit-transition: all .5s;
+   transition: all .5s;
+}
+.block-1 {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+  margin-bottom: 5px;
+}
+.block-2 {
+  color: #000;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.block-1:hover {
+  background-color: #204d74;
+  border-color: #122b40;
+}
+.block-2:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+/*Button element-------------------------------------------*/
+
+.btn-element {
+  padding: 15px;
+  border: 1px solid;
+  font-size: 17px;
+  box-shadow: inset 0 2px 5 px 2px rgba(0,0,0,.125);
+}
+.element-1 {
+  background-color: #286090;
+  border-color: #204d74;
+}
+.element-2 {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  color: #000;
+}
+.element-1:hover {
+  background-color: #204d74;
+  border-color: #122b40;
+}
+.element-2:hover {
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+/*PAGINATION--------------------------------------*/
+
+.pagination-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+.pagination-menu ul,
+.pagination-menu li {
+  display: inline;
+}
+.pagination-menu ul a,
+.pagination-menu li a {
+  text-decoration: none;
+  background-color: #f6f6f6;
+  border: 1px solid gainsboro;
+  font-size: 15px;
+  color: #000;
+  padding: 8px 12px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.pagination-menu ul a:hover,
+.pagination-menu li a:hover {
+  background-color: #FFF;
+  color: rgb(71, 125, 202);
+  -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+       -o-transition: all 0.5s;
+          transition: all 0.5s;
+}
+.pagination-menu ul a:focus,
+.pagination-menu li a:focus {
+  background-color: #FFF;
+  color: rgb(71, 125, 202);
+  -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+       -o-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+/*buttons---------------------------------------*/
+
+  .buttons-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    p {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .buttons  {
+      font-size: 16px;
+      background-color: #4285F4;
+      border: 1px solid #1266f1;
+      text-decoration: none;
+      display: inline-block;
+      padding: 15px 20px;
+      color: #FFF;
+      &:hover {
+        background-color: #4d4d4d;
+        border: 1px solid #4d4d4d;
+        color: #FFF;
+      }
+    }
+    .secondary-btn-01 {
+      background-color: #FFF;
+      border: 1px solid #e6e6e6;
+      color: #3372df;
+      &:hover {
+        background-color: #4d4d4d;
+        border: 1px solid #4d4d4d;
+        color: #fff;
+      }
+    }
+  }
+    .secondary-btn-01 {
+      background-color: #FFF;
+      border: 1px solid #e6e6e6;
+      color: #3372df;
+      &:hover {
+        background-color: #4d4d4d;
+        border: 1px solid #4d4d4d;
+        color: #fff;
+      }
+    }
+    .secondary-btn-02-p {
+      background-color: #e8e8e8;
+      padding: 10px;
+    }
+
+// Nesting
+
+ .nesting {
+    width: 70%;
+    margin: 0 auto;
+    .nesting-bt {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    &:last-child {
+      // position: relative;
+    }
+      a {
+      display: inline-block;
+      background-color: #FFF;
+      padding: 5px 10px;
+      text-decoration: none;
+      color: #000;
+      font-size: 12px;
+       &:hover {
+         background-color: #F2F2F2;
+       }
+      }
+    }
+    .nesting-dropdown-list {
+      display: inline-block;
+      border: 1px solid #ccc;
+      position: absolute;
+      left: -1px;
+      width: 140px;
+      li {
+        list-style: none; 
+      }
+      a {
+        display: block;
+        font-size: 12px;
+        color: #000;
+        text-decoration: none;
+        // padding: 2px 20px;
+        &:hover {
+         background-color: #F2F2F2;          
+        }
+      }
+    }
+  }
+
+// VERTICAL TABS
+
+.vertical-tab {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  ul {
+   li {
+     width: 200px;
+     color: #000;
+     list-style: none;
+     border: 1px solid #F2F2F2;
+     a {
+       display: block;
+       color: #000;
+       text-decoration: none;
+       padding: 15px;
+       &:hover {
+        background-color: #F2F2F2;
+       }
+     }
+   }
+  }
+  .vertical-text {
+   width: 70%;
+   border: 1px solid #F2F2F2;
+   font-size: 14px; 
+   background-color: #F2F2F2;
+   padding: 40px 30px;
+  }
+}
+

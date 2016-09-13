@@ -1,0 +1,119 @@
+ /*COMMENTS----------------------------*/
+
+  .comments {
+    /*background-color: pink;*/
+    width: 700px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+    margin-bottom: 20px;
+  }  
+  .comments img {
+    float: left;
+    margin-right: 20px;
+  }
+  .comments-body {
+    overflow: hidden;
+  }
+  .comments-body h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .comments-body p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .comments-body p:last-child {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(51, 51, 51, 0.5);
+  }
+/*clearfix-----*/
+  .comments:before,
+  .comments:after {
+    content:"";
+    display:table;
+}
+  .comments:after {
+    clear:both;
+}
+
+/*Contextual colors-------------------------------------------*/
+
+.contextual {
+  border: 1px solid #ccc;
+  padding: 25px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.contextual h1 {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+.contextual p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contextual-span {
+  background-color: #f9f2f4;
+  color: #c7254e;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+.column-1 {
+  margin-bottom: 15px;
+  border-left: 3px solid #1b809e;
+}
+.column-1 h1 {
+  color: #1b809e;
+}
+.column-2 {
+  border-left: 3px solid #aa6708;
+}
+.column-2 h1 {
+  color: #aa6708;
+}
+
+/*Contextual backgrounds--------------------------------------*/
+
+.contextual-bg {
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 14px;
+}
+.bg-1 {
+  background-color: #337ab7;
+  color: #fff;
+}
+.bg-2 {
+  background-color: #dff0d8;
+}
+.bg-3 {
+  background-color: #d9edf7;
+}
+.bg-4 {
+  background-color: #fcf8e3;
+}
+.bg-5 {
+  background-color: #f2dede;
+}
+/*EXPANDER--------------------------------------*/
+
+.expander-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+.expander-title {
+  color: #477dca;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 5px;
+}
+.expander-title a {
+  text-decoration: none;
+}
+.expander-title a:visited {
+  color: #477dca;
+}
+.expander-wrapper p {
+  font-size: 15px;
+  padding-top: 10px;
+}

@@ -1,0 +1,38 @@
+
+/*Typography---------------------------------------*/
+.typography-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Roboto Condensed",Helvetica,sans-serif;
+}
+.typography-wrapper .typography-text {
+  margin-top: 20px;
+}
+.typography-wrapper .typography-text .small {
+  font-size: 13px;
+  line-height: 1em;
+}
+.typography-wrapper .typography-text .base {
+  font-size: 16px;
+  line-height: 1em;
+}
+.typography-wrapper .typography-text .medium {
+  font-size: 20px;
+  line-height: 1em;
+}
+.typography-wrapper .typography-text .large {
+  font-size: 26px;
+  line-height: 1em;
+}
+.typography-wrapper .typography-text .xlarge {
+  font-size: 42px;
+  line-height: 1em;
+}
+.typography-wrapper .typography-text .xxlarge {
+  font-size: 68px;
+  line-height: 1em;
+}
+.typography-wrapper .typography-text .huge {
+  font-size: 110px;
+  line-height: 1em;
+}
