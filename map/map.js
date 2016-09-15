@@ -11,7 +11,7 @@
   // フリーワード：居酒屋
   // 経度、緯度を現在位置から半径何メートル以内
   var gurunabiAPI = {
-    url : 'http://api.gnavi.co.jp/RestSearchAPI/20150630/?callback=?',
+    url : 'https://api.gnavi.co.jp/RestSearchAPI/20150630/?callback=?',
     params : {
       keyid: 'b1a83c80d93c9548863b6ab1e33faba7',
       format: 'json',
