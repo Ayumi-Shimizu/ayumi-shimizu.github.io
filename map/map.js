@@ -11,7 +11,7 @@
   // フリーワード：居酒屋
   // 経度、緯度を現在位置から半径何メートル以内
   var gurunabiAPI = {
-    url : 'https://api.gnavi.co.jp/RestSearchAPI/20150630/?callback=?',
+    url : 'http://api.gnavi.co.jp/RestSearchAPI/20150630/?callback=?',
     params : {
       keyid: 'b1a83c80d93c9548863b6ab1e33faba7',
       format: 'json',
@@ -51,8 +51,7 @@
     var marker = new google.maps.Marker({
       position: latlng,
       map: mapConfig.mapElm,
-      title: '現在地',
-      icon: 'icon1.png'
+      title: '現在地'
     });
 
     new google.maps.Circle({
@@ -69,26 +68,18 @@
 
   var marker = [];
   var infoWindow = [];
-  var noImage = 'http://fakeimg.pl/350x200/?text=Noimage';
 
   // ぐるなび検索結果からピンを立てる
   function showResult(result) {
     if ( result.total_hit_count > 0 ) {
 
-      for(var i = 0; i < result.rest.length; i++){
-        var img = result.rest[i].image_url.shop_image1.length > 0 ? result.rest[i].image_url.shop_image1 : noImage;
-        var opentime = typeof(result.rest[i].opentime) === 'string' ? result.rest[i].opentime : '';
-          // if(typeof(result.rest[i].opentime) === 'string') {
-          //   var opentime = result.rest[i].opentime;
-          // } else {
-          //   var opentime = "";
-          // }
-
+      for(var i = 0; i < result.rest.length; i++){　　　
         var point = new google.maps.LatLng(result.rest[i].latitude, result.rest[i].longitude);
         marker[i] = new google.maps.Marker({position: point, map: mapConfig.mapElm});
         infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
-          content: '<div class="infoWindow">' + '<span class="result-name">' + result.rest[i].name + '</span>' + '<a href="' + result.rest[i].url + '" class="result-url">' + 'shop url' + '</a>' + '<span class="result-time">' + opentime + '</span>' + '<img src="' + img + '" class="result-img" width="200px" height="150px">' + '</div>' // 吹き出しに表示する内容
+          content: '<div class="sample">' + result.rest[i].name + '</div>' // 吹き出しに表示する内容
         });
+
         markerEvent(i);
       }
 
@@ -98,12 +89,11 @@
   }
 
 
-
   // マーカーにクリックイベントを追加
   function markerEvent(i) {
-    marker[i].addListener('click', function() { // マーカーをクリックしたとき
-      infoWindow[i].open(mapConfig.mapElm, marker[i]); // 吹き出しの表示
-    });
+  	marker[i].addListener('click', function() { // マーカーをクリックしたとき
+  		infoWindow[i].open(mapConfig.mapElm, marker[i]); // 吹き出しの表示
+  	});
   }
 
   //　住所検索地にピンを立てる
@@ -125,9 +115,7 @@
           mapConfig.mapElm.setCenter(results[0].geometry.location);
           var marker = new google.maps.Marker({
             map: mapConfig.mapElm,
-            position: results[0].geometry.location,
-            icon: 'icon1.png'
-
+            position: results[0].geometry.location
           });
         new google.maps.Circle({
           center: results[0].geometry.location,       // 中心点(google.maps.LatLng)
@@ -195,6 +183,22 @@
         $entryMenu.toggle();
         $canvas.toggle();
       });
+
+
+      var nav = $('.menu');
+      $('.view').on('click', function () {
+        nav.toggleClass('menu-non');
+        if (nav.hasClass('menu-non')) {
+          nav.animate({
+            left : '-280px'
+          },3000);
+        } else if (!nav.hasClass('menu-non')) {
+          nav.animate({
+            left : '0px'
+          },3000);
+        }
+      });
+
     });
 
 })();
