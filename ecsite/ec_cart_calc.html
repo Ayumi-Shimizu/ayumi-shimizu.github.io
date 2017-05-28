@@ -1,0 +1,240 @@
+<html>
+
+<head>
+	<title>ECサイト カート計算画面 サンプル</title>
+	<link href="ec-cart-calc.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="contents">
+	<div class="main-header">
+		<h1>ショッピングカート</h1>
+
+		<div class="attention-area">
+			<p class="postage_text">あと<span>¥600</span>で送料無料です</p>
+			<ul class="item_link">
+				<li><a href="#">〜¥999以内でさがす</a></li>
+				<li><a href="#">〜¥1,999以内でさがす</a></li>
+				<li><a href="#">〜¥2,999以内でさがす</a></li>
+				<li><a href="#">お気に入りリストからさがす</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="tableContents" class="table_contents">
+		<table id="cartTable" class="cart_table">
+			<tr id="cartTableTr_Item" class="cartTable_tr_item">
+				<th colspan="2">商品情報</th>
+				<th>金額</th>
+				<th>カラー/サイズ</th>
+				<th>個数</th>
+				<th>お気に入り/削除</th>
+			</tr>
+
+			<tr id="cartTableTr_Value" class="cartTable_tr_value">
+				<td id="valueNameBox" class="value_namebox" colspan="2">
+					<div class="name_contents">
+						<div class="imageName_contents">
+							<div class="img_content">
+								<img src="img_01.jpg">
+							</div>
+							<div class="itemContents">
+								<p class="item_stock">残り3点</p>
+								<p class="item_brand">IEDIT</p>
+								<div id="valueName" class="value_name">
+								</div><!--valueName-->
+								<p class="itemMoner"></p>
+							</div>
+						</div><!--imageName_contents-->
+						<div class="value_nameOther">
+							<div class="nameOther_textbox">
+								<p class="value_nameboxText">
+									スピード配送：本日中
+								</p>
+								<p class="value_nameboxText">
+									獲得pt：5pt
+								</p>
+								<p class="value_nameboxText">
+									ラッピング：なし
+								</p>
+							</div>
+							<div class="other_img">
+								<ul class="item_infoList">
+									<li class="item_info">返品可</li>
+									<li class="item_info">再入荷</li>
+									<li class="item_info">店舗No.1</li>
+								</ul>
+							</div><!--other_img-->
+						</div><!--value_nameOther-->
+					</div><!--name_contents-->
+				</td>
+
+				<td id="valueMoner" class="value_monter_width">¥ <span class="value_moner">hoge</span></td>
+				<td id="valueSize" class="value_size">
+					<p class="item_color">カラー：ホワイト</p>
+					<p class="item_size">サイズ：M</p>
+
+					<button class="item_changeBtn">変更</button>
+				</td>
+				<td id="valueNum" class="value_num">
+					<form id="cart_form">
+						<select id="select" class="cart_selectbox" onchange="selectValue(this.form)">
+
+						</select>
+					</form>
+					<p id="hoge"></p>
+				</td>
+				<td id="valueFav" class="value_fav">
+					<p class="fav_icon">
+						<img src="Heart_red.png" width="15" height="12"><span class="fav"><a href="#">お気に入り</a></span>
+					</p>
+					<p class="deleat_icon">
+						<img src="Trash Can_blue.png" width="16" height="13"><span class="deleat"><a href="#">削除</a></span>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div><!--table_contents-->
+
+	<div class="cart_total">
+		<p>商品合計：¥ <span class="total_moner"></span></p>
+	</div>
+
+	<div class="point_contents">
+		<h3>クーポンを利用</h3>
+
+		<div class="qupon_wrapper">
+			<div class="qupon_contents qupon_content">
+				<h3>クーポンを利用</h3>
+				<form name="qupon_form">
+					<input type="checkbox" name="qupon-group" value="1000" checked=""> 1000円クーポン
+					<br>
+					<br>
+
+				</form>
+				<div class="qupon_discount">
+					<p class="discount_text">- ¥
+						<span class="qupon_text"></span>
+					<p>
+					<p class="discount_text">合計： ¥
+						<span class="qupon_total"></span>
+					<p>
+				</div>
+			</div><!--qupon_contents-->
+		</div>
+
+		<div class="qupon_wrapper">
+			<div class="qupon_contents camp_content">
+				<h3>キャンペーンを利用</h3>
+				<form>
+					<input type="checkbox" name="camp-group" value="500" checked=""> 500円引きクーポン
+					<br>
+					<br>
+				</form>
+				<div class="qupon_discount">
+					<p class="discount_text">- ¥
+						<span class="camp_text"></span>
+					</p>
+					<p class="discount_total">合計： ¥
+						<span class="camp_total"></span>
+					</p>
+				</div>
+			</div><!--qupon_contents-->
+		</div>
+
+		<div class="qupon_wrapper">
+			<div class="qupon_contents point_content">
+				<h3>ポイントを利用</h3>
+				<div class="Poss_point">
+					<p>利用可能ポイント：
+						<span class="point_text">0</span>pt
+					</p>
+					<input type="text" id="point_textBox" onKeyUp="changeUsePoint(this)">：pt を利用
+				</div>
+				<div class="qupon_discount">
+					<p class="discount_text"><span class="monerMark">- ¥</span>
+						<span class="discount_point_text"></span>
+					</p>
+					<p class="discount_total">合計： ¥
+						<span class="point_total"></span>
+					</p>
+				</div>
+
+			</div><!--qupon_contents-->
+		</div>
+	</div>
+
+	<div class="footer_contents">
+		<div class="postage_box">
+			<h3>配送業者 / 送料</h3>
+			<div class="postage_normalBox">
+				<h3 class="postage_title">> 通常配送</h3>
+				<form name="postage_normalForm" class="normal_form">
+					<input type="radio" name="postage" value="postage_normal" checked=""><span class="postage_normal_text"> 通常配送</span>
+
+					<select id="deliSelect" class="deli_selectBox" name = "deli_select" onchange="changeShippingCarrier(this.form)">
+
+					</select>
+					
+				</form>
+				<div class="postage_total">
+					<p class="postage_option">配送業者： 
+						<span class="postage_text"></span>
+					</p>
+					<p class="postage_option">送料： <span class="postage_text">¥</span> 
+						<span class="postage_value postage_text"></span>
+					</p>
+				</div>
+			</div>
+
+			<div class="postage_specialBox">
+				<h3 class="postage_title">><a href="#">スピード配送はこちらから</a></h3>
+
+			</div>
+		</div>
+		<div class="total_monerBox">
+			<h3>お支払金額</h3>
+			<div class="total_contents">
+				<div class="total_color">
+					<div class="totalContentsBox">
+						<p class="item_monerText">商品合計
+							<p class="itemMonerBox">
+								¥ <span class="itemMonerText"></span>
+							</p>
+						</p>
+						<p class="item_pointText">ポイント利用
+							<p class="itemPointBox">
+								¥ <span class="itemPointText"></span>
+							</p>
+						</p>
+						<p class="item_postageText">送料
+							<p class="itemPostageBox">
+								¥ <span class="itemPostageText"></span>
+							</p>
+						</p>
+						<div class="total_monerContents"><span class="totalMoner">合計</span>
+							<p class="total_text">¥<span class="Total">0,000</span>
+							</p>
+						</div>
+					</div>
+					<div class="order_contents">
+						<div class="order_box">
+							<p>ご注文はこちら</p>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	</div>
+<br>
+<br>
+<br>
+
+
+
+	<script type="text/javascript" src="ec-cart-calc.js" charset="utf-8"></script>
+
+</div><!--#contents-->
+</body>
+
+</html>
