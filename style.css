@@ -77,8 +77,8 @@ header {
 	width: 33.33333333%;
 	float: left;
 }
-.col-item:last-child {
-	margin-top: 20px;
+.col-item:first-child {
+	margin-bottom: 20px;
 }
 .thumbnail {
 	border: 1px solid #ddd;
