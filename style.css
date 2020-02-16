@@ -76,9 +76,10 @@ header {
 	padding-right: 15px;
 	width: 33.33333333%;
 	float: left;
-}
-.col-item:first-child {
 	margin-bottom: 20px;
+}
+.comText {
+	height: 90px;
 }
 .thumbnail {
 	border: 1px solid #ddd;
